@@ -17,7 +17,7 @@ client.on('ready', function() {
 
 
 const developers = ["452379478618800129","",""]
-const adminprefix = "%";
+const adminprefix = ".";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -65,7 +65,7 @@ const fetchVideoInfo = require('youtube-info');
  const pretty = require('pretty-ms')
 ,ti={}  
 ,spee={};
-       var prefix = "%"  
+       var prefix = "."  
  
  
  
@@ -75,7 +75,7 @@ var al7arthyCodes2 = ["📙__60%__  **|**  📘__40%__","📙__63%__  **|**  �
 client.on('message', message => {
     if(!message.guild) return;
     if (message.author.bot) return;
-      let id = message.author.id,prefix="!";//البريفكس
+      let id = message.author.id,prefix=".";//البريفكس
       if (ti[id] && (new Date).getTime() - ti[id] < 20*1000) {
           let r = (new Date).getTime() - ti[id];
           r = 20*1000 - r;
